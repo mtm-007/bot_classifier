@@ -14,7 +14,7 @@ def load_model():
     if _classifier is None:
         logger.info("Loading model classification pipeline...")
         _classifier = pipeline(
-            "model-classifier",
+            "zero-shot-classification",
             model=MODEL_NAME,
             device=-1
         )

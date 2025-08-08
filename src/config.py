@@ -10,5 +10,6 @@ DB_NAME = os.getenv("DB_NAME", "chat_db")
 
 DB_URL = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
-MODEL_NAME = "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli"
+#MODEL_NAME = "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli"
+MODEL_NAME = "answerdotai/ModernBERT-base"
 CANDIDATE_LABELS = ["bot", "human"]
