@@ -48,7 +48,7 @@ def on_startup() -> None:
 
 
 @app.post("/predict", response_model=Prediction)
-def predict(msg: IncomingMessage)-> Prediction;
+def predict(msg: IncomingMessage)-> Prediction:
     """
     Endpoint to save a message and get the probability
     that a bot is participating in the dialog.
